@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1565759276425">
+  <link rel="stylesheet" href="/css/style.css?v=1566099492821">
   <!-- 爆炸红心效果 -->
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
@@ -157,49 +157,6 @@
         <article>
             
             <pre><code>接口与多态</code></pre><p>什么是接口：当一个抽象类，如果抽象类中的所有方法都是抽象的，那么我们就可以把它定义为一个接口，接口是对行为的抽象。类是对属性和行为的抽象。</p>
-<p>语法：</p>
-<pre><code>interface 接口名{
-    方法定的定义；
-    ….
-}</code></pre><p>1.接口中的方法的定义不需要Abstract来修饰，默认就是抽象的<br>2.接口是不可以实例化的，需要有类来实现接口实现接口的语法：<br>    class 类名    implements 接口名，接口名,…{<br>        //实现每一个接口中的方法<br>    }</p>
-<p>3.接口中的方法不能和private，static和final共存<br>4.在接口中可以定义”属性”，可以通过接口的实现类的实例来访问，还可以通过接口名来访问（推荐大家    使用），接口中的属性不能修改，我们接口中的属性默认都是final static 的，通常在接口中来定义    属性把它作为常量，常量的名字规范是单词大写，而且多个单词之间用下划线来分隔。比如：    FILE_PATH<br>5.接口可以继承接口(多继承)</p>
-<p>接口的特征</p>
-<pre><code>interface A{
-
-    public void method();
-
-}</code></pre><pre><code>interface A1{
-
-    public void method();
-
-}</code></pre><pre><code>interface B extends A{
-
-}</code></pre><pre><code>class Demo implements B{
-    public void method(){
-
-    }
-
-}</code></pre><pre><code>class Demo1 implements A,A1{
-    public void method(){
-
-    }
-}</code></pre><p>接口在JDK1.8中的特性</p>
-<pre><code>接口可以定义接口的默认方法：
-    public interface InterDemo {
-
-    public default void method(){
-    //方法体
-    }
-
-    }</code></pre><p>在接口中我们之前1.7里面的抽象方法是有强制性必须实现，jdk1.8里面提供了默认的方法，让我们可以选择性的实现，让我们的接口更加灵活。</p>
-<p>使用接口的好处：</p>
-<ol>
-<li>接口定义的是一种标准，可以使我们的代码分层开发，分模块开发。</li>
-<li>降低代码的耦合度，提高代码的可扩展性和可维护性</li>
-<li>接口改进了单继承的局限。</li>
-</ol>
-<p>接口和抽象类的区别：<br>1.接口是行为的抽象可以有静态方法，抽象方法和默认方法，抽象类中可以有所有方法。<br>2.接口和抽象类都不能实例化，接口需要类来实现后实例化实现类，抽象类需要类来继承然后实例化子类。<br>3.抽象类只能单继承，接口可以多继承接口（jdk1.7），接口还可以多实现。<br>4.接口中的“属性”是public static final类型的，抽象类中的属性跟普通类中的属性没有区别。<br>5.接口中的方法默认就是抽象的不需要加absract，抽象类中的抽象方法需要加abstract关键字。</p>
-
             
         </article>
     </div>
@@ -274,7 +231,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1565759276442"></script>
+<script src="/js/app.js?v=1566099492829"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
   
